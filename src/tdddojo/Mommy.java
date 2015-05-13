@@ -5,7 +5,7 @@ package tdddojo;
  */
 public class Mommy {
 
-    private static String VOWEL_REGEX = "[aeiouAEIOU]";
+    private static final String VOWEL_REGEX = "[aeiouAEIOU]";
 
     public static String mommify(String input) {
         String vowelGroupRegex = VOWEL_REGEX + "+";
@@ -15,9 +15,7 @@ public class Mommy {
     }
 
     private static boolean vowelPercentageMoreThan30Percent(String input) {
-        if (vowelPercentageOf(input) > 0.3)
-            return true;
-        return false;
+        return vowelPercentageOf(input) > 0.3;
     }
 
     private static double vowelPercentageOf(String input) {
