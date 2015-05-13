@@ -12,5 +12,6 @@ public class MommyTests {
     @Test
     public void testMommyShouldNotReplaceAnyCharWhenVowelsLessThan30Percent() throws Exception {
         assertEquals("abbb", Mommy.mommify("abbb"));
+        assertEquals("babb", Mommy.mommify("babb"));
     }
 }
