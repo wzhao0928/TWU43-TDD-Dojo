@@ -4,10 +4,12 @@ package tdddojo;
  * Created by wbzhao on 15/5/13.
  */
 public class Mommy {
+
+    private static String VOWEL_REGEX = "[aeiouAEIOU]";
+
     public static String mommify(String input) {
-        String vowelRegex = "[aeiouAEIOU]";
         if (vowelPercentageMoreThan30Percent(input))
-            return input.replaceAll(vowelRegex, "mommy");
+            return input.replaceAll(VOWEL_REGEX, "mommy");
         return input;
     }
 
@@ -22,8 +24,7 @@ public class Mommy {
     }
 
     private static int vowelCount(String input) {
-        String vowelRegex = "[aeiouAEIOU]";
-        String[] vowelSplit = input.split(vowelRegex, -1);
+        String[] vowelSplit = input.split(VOWEL_REGEX, -1);
         return vowelSplit.length - 1;
     }
 }
