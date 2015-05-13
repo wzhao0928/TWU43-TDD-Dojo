@@ -8,8 +8,9 @@ public class Mommy {
     private static String VOWEL_REGEX = "[aeiouAEIOU]";
 
     public static String mommify(String input) {
+        String vowelGroupRegex = VOWEL_REGEX + "+";
         if (vowelPercentageMoreThan30Percent(input))
-            return input.replaceAll(VOWEL_REGEX, "mommy");
+            return input.replaceAll(vowelGroupRegex, "mommy");
         return input;
     }
 
