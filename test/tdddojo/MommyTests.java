@@ -19,5 +19,6 @@ public class MommyTests {
     public void testMommyShouldReplaceSingleVowelCharWhenVowelsMoreThan30Percent() throws Exception {
         assertEquals("bmommyb", Mommy.mommify("bab"));
         assertEquals("mommybb", Mommy.mommify("abb"));
+        assertEquals("bbmommy", Mommy.mommify("bba"));
     }
 }
