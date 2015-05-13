@@ -38,4 +38,9 @@ public class MommyTests {
     public void testMommyShouldReplaceAllVowelGroupsWhenVowelPercentageMoreThan30PercentAndMoreThanOneVowelGroup() throws Exception {
         assertEquals("bmommybmommyb", Mommy.mommify("baabaab"));
     }
+
+    @Test
+    public void testMommyShouldReplaceWithAllVowels() throws Exception {
+        assertEquals("bmommyb", Mommy.mommify("baeiouAEIOUb"));
+    }
 }
