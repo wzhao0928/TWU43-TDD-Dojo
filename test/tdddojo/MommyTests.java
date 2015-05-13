@@ -28,4 +28,9 @@ public class MommyTests {
         assertEquals("bbmommy", Mommy.mommify("bbaa"));
         assertEquals("mommybb", Mommy.mommify("aabb"));
     }
+
+    @Test
+    public void testMommyShouldNotReplaceAnythingWhenVowelsIs30Percent() throws Exception {
+        assertEquals("aaabbbbbbb", Mommy.mommify("aaabbbbbbb"));
+    }
 }
