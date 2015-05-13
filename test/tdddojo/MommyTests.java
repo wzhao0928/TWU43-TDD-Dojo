@@ -25,5 +25,7 @@ public class MommyTests {
     @Test
     public void testMommyShouldReplaceGroupedVowelsWithOneMommyWhenVowelsMoreThan30Percent() throws Exception {
         assertEquals("bmommyb", Mommy.mommify("baab"));
+        assertEquals("bbmommy", Mommy.mommify("bbaa"));
+        assertEquals("mommybb", Mommy.mommify("aabb"));
     }
 }
