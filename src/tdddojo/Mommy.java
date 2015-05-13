@@ -23,7 +23,7 @@ public class Mommy {
 
     private static int vowelCount(String input) {
         String vowelRegex = "[aeiouAEIOU]";
-        String[] vowelSplit = input.split(vowelRegex);
+        String[] vowelSplit = input.split(vowelRegex, -1);
         return vowelSplit.length - 1;
     }
 }
