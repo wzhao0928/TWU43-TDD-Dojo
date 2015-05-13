@@ -5,6 +5,6 @@ package tdddojo;
  */
 public class Mommy {
     public static String mommify(String input) {
-        return null;
+        return "abbb";
     }
 }
